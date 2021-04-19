@@ -1,0 +1,109 @@
+VERSION 1.1.1
+ - Bug Fix: No voice output on windows 64 Bit Standalone
+ - Support for TextMeshPro Button, DropDown and Input
+ - Support for Screen Space Canvas
+ - Added default option for popups to automatically read from the top
+ - Added helper script to link Back/Close buttons to the scrub gesture
+ - Bug Fix: Android text-to-speed stuttering when moving fast
+ - Added keyboard shortcuts for Windows and Mac to toggle plugin
+ - Added LayoutElement with IngoreLayout setting to the unit frame to remove ipact on layout groups
+
+VERSION 1.1.0
+ - Added support for selecting 3D objects in the world
+ - Added TextMeshPro support
+ - 2 finger scrub gesture support
+ - Added virtual keyboard
+ - All deltaTime calls replaced with unscaledDeltaTime
+ - Text formatting is now filtered out of strings before they are read
+ - Added callbacks for when an accessible element is selected and deselected
+ - Closing a popup now returns to the previously selected item (instead of starting from the top of the page)
+ - Added built-in WebGL TTS solution using Web Speech API (English only at the moment)
+ - Added checkbox to enable debug log output for the plugin
+ - 2 finger screen touch now stops all text
+ - Accessible components can now be on the same GameObject as the Accessible Group Root
+ - Label postfix support in addition to prefix
+
+VERSION 1.0.6
+- Added Localization support (English & German included, more languages can be added)
+- Added 32Bit support for NVDA and Windows SAPI (x86 build target)
+- Bug Fix: MacOS TTS no longer occasionally throws 'Process has already finished' error
+- Bug Fix: Loading new scene will no longer cause issues with Windows or MacOS TTS
+- UAP Icon is now also drawn next to GameObjects with UI Group Root component
+
+VERSION 1.0.5a
+- Bug Fix: Removed asmdef file, which caused Editor scripts to be included in standalone builds, prompting them to fail with compilation errors
+
+VERSION 1.0.5
+- Added Google API TTS support for WebGL
+- Added generic support for third-party TTS systems
+- Added function to query whether Magic Gestures are enabled
+- Bug Fix: All localized UI elements now properly use the Localize() function
+- Bug Fix: Fixed debug log function not respecting checkbox
+- Added Assembly definition file to reduce compile times in Editor
+- Delayed Windows TTS initialization until it is being used to increase compatibility with some Windows versions
+- Fixed compile warning about GetInstanceID in manager class
+
+VERSION 1.0.4
+- Improved/Fixed TalkBack detection on Android 8.x
+- Added Experimental WebGL support
+- Optimization of Selection Group component
+- New Option: Plugin on/off can be linked directly to VoiceOver (optional)
+- Bug Fix: Scroll View jittering when auto-scrolling
+- uGUI: Better handling of old/incorrect/broken scroll view setups
+- Using the ALT key to emulate two finger taps with the mouse in Editor
+- New Option: Use mouse swipes on PC to emulate swipes for mobile development
+- Added SaySkippable() function to make an announcement that can be interrupted by player input
+- Some performance optimizations
+
+VERSION 1.0.3
+- Added MacOS voice support
+- Added prefix option to combine your text and label content
+- Scrolling: Added option to disable auto-scroll
+- Manual Traversal Order will work even when no parent is set
+- Bug Fix: Read from top/current now triggers reliably
+- Read from top/current can now be triggered from code
+- New Option: Plugin saves enabled state can be turned on/off
+
+VERSION 1.0.2
+- Added button to Inspector to manually toggle Accessibility mode during Editor play
+- Added helper function to format larger numbers in a VoiceOver/TalkBack friendly manner
+- uGUI: The element frame will be automatically recreated if it is deleted
+- uGUI: ScrollViews that have no ViewPort set will now be handled by attempting to locate the viewport automatically
+- Bug Fix: Starting Play in an accessible scene without the Accessiblity Manager prefab will no longer cause a crash
+- Bug Fix: uGUI - switching scenes no longer throws an error about a missing RectTransform
+
+VERSION 1.0.1
+- Update to Unity 2017.1.1p3
+- References to UI elements that were removed while UAP was paused/blocked are now handled correctly
+- Support for 3D UIs added for uGUI (support for Canvas Render Modes "Screen Space - Camera" and "World Space")
+- Added World Space UI Example
+- Calling BlockInput() can now optionally stop and clear all queued speech
+- Bug Fix: Function SelectNothing() now correctly hides the item highlight frame
+- UI Groups added in background while popup is active will be suspended until popup is closed
+- Bug Fix: Deleting the very last item on the screen while it is selected no longer causes nothing to be selected
+
+VERSION 1.0.0
+- Updated the graphics in the scrollable 2D map example
+- Accessibility prefab can now comfortably be added to scene via the menu
+- All Update() calls removed for UAP_BaseElement to improve performance
+- Android Emulator now works with UAP
+- Updated Logo for the plugin
+- Added Quick Start Guide as PDF
+
+VERSION 0.9.5
+- UAP Manager Settings no longer displays a false warning when VoiceOver is enabled
+- Path to Plugin folder is stored in a variable, to make moving the plugin easy
+- NGUI support can now be enabled/disabled in the menu
+- Added NGUI example navigation scene
+- NGUI support for popup lists (dropdown lists) added
+- Accessibility will no longer turn itself on after being disabled manually
+- Proper Version Check, with displayed changelist and automatic recheck
+
+VERSION 0.9.3
+- Added option to disable VoiceOver
+- Added menu option to check for updates for UAP plugin
+- Switched to use native swipe recognition on iOS
+
+VERSION 0.9.0
+- NGUI Support added
+- Added About window for UAP plugin

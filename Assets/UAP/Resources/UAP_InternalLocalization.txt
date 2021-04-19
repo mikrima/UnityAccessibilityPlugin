@@ -1,0 +1,49 @@
+LANGUAGE	English	German	French	Spanish
+EnabledAccessibility	Enabled Accessibility	Barrierefreiheit eingeschaltet	Activé Accessibilité	Accesibilidad habilitado
+DisabledAccessibility	Accessibility turned off. Tap three times with three fingers to turn back on.	Barrierefreiheit ausgeschaltet. Zum Einschalten mit drei Fingern dreimal schnell auf den Bildschirm tippen.	L'accessibilité est éteint. Appuyez trois fois avec trois doigts pour revenir en arrière sur.	Accesibilidad apagado. Toque tres veces con tres dedos para volver a encender.
+TalkBack_PleaseSuspend	Please suspend TalkBack during play.	Bitte TalkBack während des Spielens pausieren.	S'il vous plaît suspendre TalkBack pendant le jeu.	Por favor, suspender TalkBack durante el juego.
+DropdownItemIndex	Item XX of YY	Eintrag XX von YY	Point XX de YY	Artículo XX de YY
+DropdownItemSelected	TT selected	TT ausgewählt	TT sélectionné	TT seleccionado
+ElementDisabled	Disabled	Deaktiviert	désactivé	Desactivado
+Element_Button	Button	Schaltfläche	Bouton	Botón
+Element_Slider	Slider	Regler	Glissière	deslizador
+Element_Toggle	Toggle	Checkbox	Basculer	Palanca
+Element_TextEdit	Text Edit Field	Texteingabefeld	Modifier le texte Champ	El campo de edición de texto
+Element_Dropdown	Dropdown List	Aufklappbare Liste	La liste déroulante	La lista desplegable
+Checkbox_Checked	checked	angewählt	vérifié	comprobado
+Checkbox_NotChecked	not checked	nicht angewählt	pas vérifié	Sin revisar
+Keyboard_PasswordHidden	password hidden	Passwort wird nicht angezeigt	mot de passe caché	contraseña oculta
+Keyboard_CapitalLetter	captial X	grosses X	X majuscule	X mayúscula
+Keyboard_ShowingLetters	showing letters	zeige Buchstaben an	montrant des lettres	mostrando las cartas
+Keyboard_ShowingNumbers	showing numbers	zeige Zahlen an	chiffres montrant	mostrando los números
+Keyboard_ShowingSymbols	showing symbols	zeige Symbole an	montrant des symboles	mostrando símbolos
+Keyboard_Letters	Letters	Buchstaben	Des lettres	Letras
+Keyboard_Numbers	Numbers	Zahlen	Nombres	Números
+Keyboard_Symbols	Symbols	Symbole	symboles	símbolos
+Keyboard_NumbersAndSymbols	Numbers and symbols	Zahlen und Symbole	Les nombres et les symboles	Números y símbolos
+Keyboard_ShowingLanguage	Keyboard language	Tastatur Sprache	Langue du clavier	idioma del teclado
+Keyboard_Hidden	Keyboard hidden	Tastatur geschlossen	clavier caché	teclado escondido
+Keyboard_Showing	Showing keyboard	Tastatur wird angezeigt	clavier Affichage	que muestra el teclado
+Keyboard_Return	New Line	Neue Zeile	Nouvelle ligne	Nueva línea
+Keyboard_Done	Done	Abschicken	Terminé	Hecho
+Keyboard_Space	Space	Leertaste	Espace	Espacio
+Keyboard_Delete	Delete	Löschen	Supprimer	Eliminar
+Keyboard_Cancel	Cancel	Abbrechen	Annuler	Cancelar
+Keyboard_DeleteAll	Delete all	Text löschen	Supprimer tous	Eliminar todos
+Keyboard_ShiftKey	Shift key	Umschalttaste	Touche Majuscule	Tecla Shift
+Keyboard_ShiftOn	Shift on	Grossbuchstaben	lettres capitales	letras mayúsculas
+Keyboard_ShiftOff	Shift off	Kleinbuchstaben	minuscules	letras minusculas
+				
+Mobile_General	Swipe left and right to navigate. Swipe up and down to quickly jump between groups of elements. Swipe up with two fingers to read the entire screen from the top. Double tap to activate an item.	Zum Navigieren nach links oder rechts swipen. Um schnell zwischen Gruppen hin und her zu springen, nach oben oder unten swipen. Um den Bildschirm von oben nach unten vorgelesen zu bekommen, bitte mit zwei Fingern aufwärts swipen. Zum Anwählen einer Schaltfläche mit einem Finger doppelt tippen.	Balayez vers la gauche et à droite pour naviguer. Balayez vers le haut et vers le bas pour sauter rapidement entre les groupes d'éléments. Balayez avec deux doigts pour lire tout l'écran du haut. Appuyez deux fois pour activer un élément.	Pase a la izquierda y la derecha para navegar. Pase hacia arriba y hacia abajo para saltar rápidamente entre los grupos de elementos. Pase hacia arriba con dos dedos para leer toda la pantalla desde la parte superior. Doble toque para activar un elemento.
+Mobile_HintButton	Double tap to select.	Zum Anwählen doppelt tippen.	Appuyez deux fois pour sélectionner.	Doble toque para seleccionar.
+Mobile_HintToggle	Double tap to change.	Zum Ändern doppelt tippen.	Appuyez deux fois au changement.	Doble toque para el cambio.
+Mobile_HintTextEdit	Double tap to edit.	Zum Ändern doppelt tippen.	Appuyez deux fois pour modifier.	Doble click para editar.
+Mobile_HintDropdown	Double tap to change.	Zum Ändern doppelt tippen.	Appuyez deux fois au changement.	Doble toque para el cambio.
+Mobile_HintSlider	Double tap to activate, then swipe up and down to change the value.	Zum Anwählen doppelt tippen, danach nach oben und unten swipen, um Einträge auszuwählen.	Appuyez deux fois pour activer, puis faites glisser votre doigt vers le haut et vers le bas pour changer la valeur.	Doble toque para activar, a continuación, deslizar hacia arriba y abajo para cambiar el valor.
+				
+Desktop_General	Use the up and down arrow keys to navigate. Use Tab and Shift-Tab to quickly jump between groups of elements. Press return to activate an item.	Zum Navigieren die Pfeiltasten nutzen. Mit Tab und Umschalttaste und Tab kann zwischen Gruppen schnell hin und her gesprungen werden. Zum Anwählen einer Schaltfläche Enter drücken.	Utilisez le haut et vers le bas les touches fléchées pour naviguer. Utilisez Tab et Shift-Tab pour passer rapidement entre les groupes d'éléments. Appuyez sur Entrée pour activer un élément.	Utilice el arriba y abajo las teclas de flecha para navegar. Utilice Tab y Shift-Tab para saltar rápidamente entre grupos de elementos. Prensa volver a activar un elemento.
+Desktop_HintButton	Press return to select.	Zum Anwählen Enter drücken.	Appuyez sur Entrée pour sélectionner.	Presiona enter para seleccionar
+Desktop_HintToggle	Press return to change.	Zum Ändern Enter drücken.	Appuyez sur Entrée pour le changement.	Prensa retorno al cambio.
+Desktop_HintTextEdit	Press return to edit.	Zum Ändern Enter drücken.	Appuyez sur Entrée pour modifier.	Prensa volver a editar.
+Desktop_HintDropdown	Press return to change.	Zum Ändern Enter drücken.	Appuyez sur Entrée pour le changement.	Prensa retorno al cambio.
+Desktop_HintSlider	Press return to activate, then use up and down arrows to change the value.	Zum Anwählen Enter drücken, danach mit den Pfeiltasten einen Eintrag auswählen.	retour Appuyez sur pour activer, puis utilisez flèches haut et bas pour changer la valeur.	Pulse Intro para activar, a continuación, utilizar flechas arriba y abajo para cambiar el valor.
