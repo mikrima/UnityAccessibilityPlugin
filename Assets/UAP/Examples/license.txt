@@ -1,0 +1,5 @@
+All assets inside the example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial).
+The UI for the Match 3 game example was created by Vasili Tkach.
+It is available for free here: 
+Funtique UI by Vasili Tkach
+https://dribbble.com/shots/2261532--Funtique-game-UI-kit-free-PSD
