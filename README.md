@@ -21,7 +21,7 @@ them unusable for everyone else).
 
 ## Developers
 UI elements need to be marked up as accessible so that the UAP can recognize them, read them aloud to users, 
-and allow interaction. This is done by adding accessibility-components to the GameObjects that are relevant.
+and allow interaction. This is done by adding accessibility-components to the GameObjects that are relevant.<br>
 
 ## Blind Users
 The controls are based on popular screen readers like VoiceOver, NVDA and TalkBack, so that blind users will not 
@@ -39,7 +39,7 @@ The UAP plugin itself is made available under the Apache 2.0 license. See includ
 This license does **not** apply to the demo and example content.
 
 ## Example Scene
-All assets inside the example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial).<br>
+All assets inside the Example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial).<br>
 The UI for the Match 3 game example was created by Vasili Tkach.<br>
 It is available for free here: <a href="https://dribbble.com/shots/2261532--Funtique-game-UI-kit-free-PSD">Funtique UI by Vasili Tkach</a>
 
@@ -71,3 +71,8 @@ OS default behaviour in their device settings). This topic has been discussed in
 As this is caused by the OS, it isn't something that this plugin can automatically circumvent. It is possible 
 that future versions of Unity will register the correct view parameters and solve this issue.<br>
 More on the topic can be found here: <a href="https://developer.apple.com/forums/thread/663529">Direct Touch Interaction Broken in iOS 14?</a>
+<br>br<
+<b>*Can I delete the Examples folder?*</b><br>
+Yes. It is safe to delete the entire "Examples" folder from the plugin if it isn't needed.<br>
+Also keep in mind that the assets used in the examples do not fall under the Apache 2.0 license, and cannot be 
+used in other projects.
