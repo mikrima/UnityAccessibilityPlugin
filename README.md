@@ -30,7 +30,7 @@ The plugin will try to detect a screen reader running in the background and enab
 it will sit dormant and not interfere with the app (making it usable for non-blind users).
 
 # Documentation
-The documentation, how-to guides and further examples can be found <a href="http://www.metalpopgames.com/assetstore/accessibility/doc/index.html">here</a>.
+The documentation, how-to guides and further examples can be found <a href="http://www.metalpopgames.com/assetstore/accessibility/doc/index.html">here</a>.<br>
 There's also a tutorial video demonstrating the basic setup: <a href="https://www.youtube.com/watch?v=SJuQWf7p9T4">Basic Tutorial Video</a>.
 
 # FAQ
