@@ -19,15 +19,15 @@ Tested in Unity 5.6 to Unity 2020.1.
 This plugin brings screen reader functionality to Unity apps, making them usable for blind users (without making 
 them unusable for everyone else).
 
-## Users
+## Developers
+UI elements need to be marked up as accessible so that the UAP can recognize them, read them aloud to users, 
+and allow interaction. This is done by adding accessibility-components to the GameObjects that are relevant.
+
+## Blind Users
 The controls are based on popular screen readers like VoiceOver, NVDA and TalkBack, so that blind users will not 
 have to relearn a new method of control.
 The plugin will try to detect a screen reader running in the background and enable itself if it does. Otherwise 
 it will sit dormant and not interfere with the app (making it usable for non-blind users).
-
-## Developers
-UI elements need to be marked up as accessible so that the UAP can recognize them, read them aloud to users, 
-and allow interaction. This is done by adding accessibility-components to the GameObjects that are relevant.
 
 # Documentation
 The documentation, how-to guides and further examples can be found <a href="http://www.metalpopgames.com/assetstore/accessibility/doc/index.html">here</a>.
