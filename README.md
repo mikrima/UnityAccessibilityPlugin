@@ -34,6 +34,21 @@ The documentation, how-to guides and further examples can be found <a href="http
 There's also a tutorial video demonstrating the basic setup: <a href="https://www.youtube.com/watch?v=SJuQWf7p9T4">Basic Tutorial Video</a>.<br>
 Here's a forum thread for discussion and support on the Unity forums: <a href="https://forum.unity.com/threads/released-ui-accessibility-plugin-uap-v1-0.469298/?_ga=2.92342237.1961910733.1618848783-1844297938.1510951995">UI Accessibility Plugin</a>
 
+# License & Asset Usage Rights
+The UAP plugin itself is made available under the Apache 2.0 license. See included license file for details.<br>
+This license does **not** apply to the demo and example content.
+
+## Example Scene
+All assets inside the example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial). The UI for the Match 3 game example was created by Vasili Tkach. It is available for free here: <a href="https://dribbble.com/shots/2261532--Funtique-game-UI-kit-free-PSD">Funtique UI by Vasili Tkach</a>
+
+## Third Party Licensing Terms
+Windows only:
+UAP includes the shared NVDA screen reader controller client library for 64 and 32 Bit.
+The library can be found in the folders UAP/Plugins/x86 and UAP/Plugins/x86_64 respectively.
+The NVDA Controller Client API is licensed under the GNU Lesser General Public License (LGPL), version 2.1 (Source)
+In simple terms, this library can be used in any application, but cannot be modified.
+Link to full license text: <a href="https://github.com/nvaccess/nvda/blob/master/extras/controllerClient/license.txt">https://github.com/nvaccess/nvda/blob/master/extras/controllerClient/license.txt</a>
+
 # FAQ
 <b>*Does this make VoiceOver recognize my Unity app?*</b><br>
 No. This plugin works and acts like a screen-reader - it does not expose Unity's UI to native screen readers.
