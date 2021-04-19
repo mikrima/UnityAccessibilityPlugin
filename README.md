@@ -25,7 +25,7 @@ and allow interaction. This is done by adding accessibility-components to the Ga
 
 ## Blind Users
 The controls are based on popular screen readers like VoiceOver, NVDA and TalkBack, so that blind users will not 
-have to relearn a new method of control.
+have to relearn a new method of control.<br>
 The plugin will try to detect a screen reader running in the background and enable itself if it does. Otherwise 
 it will sit dormant and not interfere with the app (making it usable for non-blind users).
 
@@ -39,14 +39,16 @@ The UAP plugin itself is made available under the Apache 2.0 license. See includ
 This license does **not** apply to the demo and example content.
 
 ## Example Scene
-All assets inside the example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial). The UI for the Match 3 game example was created by Vasili Tkach. It is available for free here: <a href="https://dribbble.com/shots/2261532--Funtique-game-UI-kit-free-PSD">Funtique UI by Vasili Tkach</a>
+All assets inside the example folder (or its subfolders) of this plugin are for sample purposes only and cannot be redistributed, sold or used in your products (free or commercial).<br>
+The UI for the Match 3 game example was created by Vasili Tkach.<br>
+It is available for free here: <a href="https://dribbble.com/shots/2261532--Funtique-game-UI-kit-free-PSD">Funtique UI by Vasili Tkach</a>
 
 ## Third Party Licensing Terms
-Windows only:
+Windows only:<br>
 UAP includes the shared NVDA screen reader controller client library for 64 and 32 Bit.
 The library can be found in the folders UAP/Plugins/x86 and UAP/Plugins/x86_64 respectively.
-The NVDA Controller Client API is licensed under the GNU Lesser General Public License (LGPL), version 2.1 (Source)
-In simple terms, this library can be used in any application, but cannot be modified.
+The NVDA Controller Client API is licensed under the GNU Lesser General Public License (LGPL), version 2.1 (Source)<br>
+In simple terms, this library can be used in any application, but cannot be modified.<br>
 Link to full license text: <a href="https://github.com/nvaccess/nvda/blob/master/extras/controllerClient/license.txt">https://github.com/nvaccess/nvda/blob/master/extras/controllerClient/license.txt</a>
 
 # FAQ
