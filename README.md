@@ -31,7 +31,8 @@ it will sit dormant and not interfere with the app (making it usable for non-bli
 
 # Documentation
 The documentation, how-to guides and further examples can be found <a href="http://www.metalpopgames.com/assetstore/accessibility/doc/index.html">here</a>.<br>
-There's also a tutorial video demonstrating the basic setup: <a href="https://www.youtube.com/watch?v=SJuQWf7p9T4">Basic Tutorial Video</a>.
+There's also a tutorial video demonstrating the basic setup: <a href="https://www.youtube.com/watch?v=SJuQWf7p9T4">Basic Tutorial Video</a>.<br>
+Here's a forum thread for discussion and support on the Unity forums: <a href="https://forum.unity.com/threads/released-ui-accessibility-plugin-uap-v1-0.469298/?_ga=2.92342237.1961910733.1618848783-1844297938.1510951995">UI Accessibility Plugin</a>
 
 # FAQ
 <b>*Does this make VoiceOver recognize my Unity app?*</b><br>
