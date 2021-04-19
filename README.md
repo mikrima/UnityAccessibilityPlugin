@@ -37,7 +37,7 @@ There's also a tutorial video demonstrating the basic setup: <a href="https://ww
 <b>Does this make VoiceOver recognize my Unity app?</b><br>
 No. This plugin works and acts like a screen-reader - it does not expose Unity's UI to native screen readers.
 It basically reimplements the functionality of VoiceOver (and then some). Exposing the UI tree to the native 
-screen readers is impossible, because both UGUI and NGUI work in a different way.
+screen readers is not feasible, because UGUI and NGUI don't work this way.
 <br><br>
 <b>Can this plugin circumvent the problem with TalkBack blocking input?</b><br>
 TalkBack blocks input to Unity on an OS level, and this plugin can not circumvent that. 
