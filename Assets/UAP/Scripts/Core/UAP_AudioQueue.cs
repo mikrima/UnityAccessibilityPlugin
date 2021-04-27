@@ -81,7 +81,7 @@ public class UAP_AudioQueue : MonoBehaviour
 		//Debug.Log("speaking " + textForTTS);
 		// Build struct and call internal add function
 		SAudioEntry newEntry = new SAudioEntry();
-		newEntry.m_TTS_Text = textForTTS;
+		newEntry.m_TTS_Text = Regex.Replace(textForTTS, "(<.[^(><.)]+>)", " ");
 		newEntry.m_AllowVoiceOver = allowVoiceOver;
 		newEntry.m_AudioType = type;
 		newEntry.m_IsInterruptible = isInterruptible;
