@@ -71,7 +71,7 @@ OS default behaviour in their device settings). This topic has been discussed in
 As this is caused by the OS, it isn't something that this plugin can automatically circumvent. It is possible 
 that future versions of Unity will register the correct view parameters and solve this issue.<br>
 More on the topic can be found here: <a href="https://developer.apple.com/forums/thread/663529">Direct Touch Interaction Broken in iOS 14?</a>
-<br>br<
+<br><br>
 <b>*Can I delete the Examples folder?*</b><br>
 Yes. It is safe to delete the entire "Examples" folder from the plugin if it isn't needed.<br>
 Also keep in mind that the assets used in the examples do not fall under the Apache 2.0 license, and cannot be 
