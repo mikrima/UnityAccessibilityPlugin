@@ -15,6 +15,11 @@ Tested in Unity 5.6 to Unity 2020.1.
 - Mac
 - WebGL (some limitations apply)
 
+# Installation
+1. Download or clone this repo.
+2. Copy the UAP folder into your project's asset folder.
+3. Follow the Quick Start Guide either using the included PDF or the online guide <a href="http://www.metalpopgames.com/assetstore/accessibility/doc/QuickStart.html">here</a>.
+
 # Basic Functionality
 This plugin brings screen reader functionality to Unity apps, making them usable for blind users (without making 
 them unusable for everyone else).
