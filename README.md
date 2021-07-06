@@ -81,9 +81,9 @@ More on the topic can be found here: <a href="https://developer.apple.com/forums
 <b>*Can I delete the Examples folder?*</b><br>
 Yes. It is safe to delete the entire "Examples" folder from the plugin if it isn't needed.<br>
 Also keep in mind that the assets used in the examples do not fall under the Apache 2.0 license, and cannot be 
-used in other projects.
+used in other projects. See section **License & Asset Usage Rights** further up on this page.
 <br><br>
 <b>*Is this plugin free to use in commercial projects?*</b><br>
 Yes.<br>
 Please note that the assets used in the Examples folder do not fall under the Apache 2.0 license, and may not be 
-used in such projects.
+used in such projects. See section **License & Asset Usage Rights** further up on this page.
