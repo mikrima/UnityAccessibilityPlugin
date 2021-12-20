@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 [RequireComponent(typeof(AudioSource))]
 [AddComponentMenu("Accessibility/Core/UAP Audio Queue")]
