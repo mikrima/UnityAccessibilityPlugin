@@ -4,10 +4,10 @@
 
 #include "pch.h"
 #include "WindowsTTS.h"
-#include <atlbase.h>
-#include <Windows.h>
 #include <sapi.h>
 #include <sphelper.h>
+#include <atlbase.h>
+#include <Windows.h>
 
 
 namespace WindowsVoice
@@ -188,7 +188,7 @@ namespace WindowsVoice
 
 			// Try to find a matching voice
 			ISpObjectToken* cpToken(NULL);
-			HRESULT hr = SpFindBestToken(SPCAT_VOICES, wText, L"", &cpToken);
+			SpFindBestToken(SPCAT_VOICES, wText, L"", &cpToken);
 
 			//if there's a valid token
 			if (cpToken) {
