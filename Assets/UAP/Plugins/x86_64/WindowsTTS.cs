@@ -19,6 +19,8 @@ public class WindowsTTS : MonoBehaviour
 	//public static extern void SetRate(int rate);
 	[DllImport("WindowsTTS")]
 	public static extern bool IsVoiceSpeaking();
+	[DllImport("WindowsTTS")]
+    public static extern void SetVoiceSAPI(string s);
 
 	[DllImport("nvdaControllerClient")]
 	internal static extern int nvdaController_testIfRunning();
@@ -91,6 +93,20 @@ public class WindowsTTS : MonoBehaviour
 			AddToSpeechQueue(msg);
 		}
 	}
+
+	    //////////////////////////////////////////////////////////////////////////
+        
+    /// <summary>
+    /// Sets the voice used by the SAPI API
+    /// </summary>
+    /// <param name="name">Name of the voice to be used. Can be found under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\[voice]\Attributes.</param>
+    public static void SetVoice(string name)
+    {
+        if (!m_UseNVDA)
+        {
+            SetVoiceSAPI("Name=" + name);
+        }
+    }
 
 	//////////////////////////////////////////////////////////////////////////
 

@@ -10,20 +10,20 @@
 #include <Windows.h>
 
 
-namespace WindowsVoice 
+namespace WindowsVoice
 {
 
 	int Volume = 100;
 	int Rate = 0;
 
 	bool IsSpeaking = false;
-	ISpVoice * pVoice = NULL;
+	ISpVoice* pVoice = NULL;
 
 	void SpeechThreadFunc()
 	{
 		//SpeechSynthesizer* synth = new SpeechSynthesizer();
 
-		SPVOICESTATUS *pStatus = new SPVOICESTATUS();
+		SPVOICESTATUS* pStatus = new SPVOICESTATUS();
 
 		if (FAILED(::CoInitializeEx(NULL, COINITBASE_MULTITHREADED)))
 		{
@@ -31,7 +31,7 @@ namespace WindowsVoice
 			return;
 		}
 
-		HRESULT hr = CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_ALL, IID_ISpVoice, (void **)&pVoice);
+		HRESULT hr = CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_ALL, IID_ISpVoice, (void**)&pVoice);
 		pVoice->SetRate(Rate);
 		pVoice->SetVolume(Volume);
 		if (!SUCCEEDED(hr))
@@ -86,10 +86,10 @@ namespace WindowsVoice
 			if (wText)
 			{
 				//SetNotifyCallbackFunction
-					pVoice->Speak(wText, SPF_IS_NOT_XML | SPF_ASYNC, NULL);
-					//          Sleep(250);
-					delete[] priorText;
-					priorText = wText;
+				pVoice->Speak(wText, SPF_IS_NOT_XML | SPF_ASYNC, NULL);
+				//          Sleep(250);
+				delete[] priorText;
+				priorText = wText;
 			}
 		}
 		pVoice->Release();
@@ -103,7 +103,7 @@ namespace WindowsVoice
 		if (text)
 		{
 			int len = strlen(text) + 1;
-			wchar_t *wText = new wchar_t[len];
+			wchar_t* wText = new wchar_t[len];
 
 			memset(wText, 0, len);
 			::MultiByteToWideChar(CP_ACP, NULL, text, -1, wText, len);
@@ -182,7 +182,7 @@ namespace WindowsVoice
 		{
 			// convert char to WCHAR
 			int len = strlen(voiceDescription) + 1;
-			wchar_t *wText = new wchar_t[len];
+			wchar_t* wText = new wchar_t[len];
 			memset(wText, 0, len);
 			::MultiByteToWideChar(CP_ACP, NULL, voiceDescription, -1, wText, len);
 
@@ -190,12 +190,14 @@ namespace WindowsVoice
 			ISpObjectToken* cpToken(NULL);
 			SpFindBestToken(SPCAT_VOICES, wText, L"", &cpToken);
 
-			// Set the voice
-			theMutex.lock();
-			pVoice->SetVoice(cpToken);
-			theMutex.unlock();
-
-			cpToken->Release();
+			//if there's a valid token
+			if (cpToken) {
+				// Set the voice
+				theMutex.lock();
+				pVoice->SetVoice(cpToken);
+				theMutex.unlock();
+				cpToken->Release();
+			}
 		}
 	}
 
