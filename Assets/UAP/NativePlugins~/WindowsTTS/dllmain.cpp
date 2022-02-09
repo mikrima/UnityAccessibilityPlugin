@@ -159,6 +159,7 @@ namespace WindowsVoice
 	{
 		theMutex.lock();
 		Rate = rate;
+		pVoice->SetRate(Rate);
 		theMutex.unlock();
 	}
 
