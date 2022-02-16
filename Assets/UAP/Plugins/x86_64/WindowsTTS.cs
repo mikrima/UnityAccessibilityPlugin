@@ -166,8 +166,8 @@ public class WindowsTTS : MonoBehaviour
         //if using SAPI
         if (!m_UseNVDA)
         {
-            //normalize the rate to -10 to 10 range
-            rate = -10 + (rate - 1) * 20 / 99;
+            //normalize the standard 1-100 rate to SAPI -10 to 10 range
+            rate = -10 + (int)((rate - 1) * 0.202);
         }
         SetRate(rate);
     }

@@ -4707,6 +4707,22 @@ public class UAP_AccessibilityManager : MonoBehaviour
 	//////////////////////////////////////////////////////////////////////////
 
 	/// <summary>
+	/// Set the voice used by the screen reader. 
+	/// Only works with the Windows SAPI TTS
+	/// Available voices can be found in the registry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\[voice]\Attributes\Name
+	/// </summary>
+	/// <param name="voice">Name of the voice to be used</param>
+	/// <returns></returns>
+	static public string SetVoice(string voice)
+    {
+		Initialize();
+		return instance.m_AudioQueue.SetVoice(voice);
+    }
+
+
+	//////////////////////////////////////////////////////////////////////////
+
+	/// <summary>
 	/// This function is called from the Accessible UI component if the <i>Is Localization Key</i> checkbox is ticked.
 	/// 
 	/// If NGUI support is enabled, this function will use NGUI's inhouse localization function to localize the text.
