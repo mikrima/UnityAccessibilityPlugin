@@ -3,14 +3,12 @@
 
 #define IOS_USENATIVESWIPES
 
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-
+using System.Globalization;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Globalization;
 
 /// <summary>This is the main object to handle all the accessibility in an app. Please use the premade Accessibility Manager prefab.</summary>
 [AddComponentMenu("Accessibility/Core/UAP Manager")]
@@ -766,23 +764,32 @@ public class UAP_AccessibilityManager : MonoBehaviour
 
 		UpdateElementFrame(ref element);
 
-		// Read the element
-		SpeakElement_Text(ref element);
-
-		// This adds a pause if needed
-		instance.ReadDisabledState();
-
-		// Read value adds a pause if needed
-		instance.ReadValue();
-
-		// Read type, unless suppressed
-		if (element.ReadType())
+		if (instance.m_CurrentItem != null
+				&& !instance.m_CurrentItem.m_Object.IsInteractable()
+				&& instance.m_CurrentItem.m_Object.m_SkipIfDisabled)
 		{
-			if (instance.m_ContinuousReading)
-				instance.SayPause(instance.m_TypeDelay * 0.5f);
-			else
-				instance.SayPause(instance.m_TypeDelay);
-			instance.ReadType();
+			instance.UpdateKeyboardInput();
+		}
+		else 
+		{
+			// Read the element
+			SpeakElement_Text(ref element);
+
+			// This adds a pause if needed
+			instance.ReadDisabledState();
+
+			// Read value adds a pause if needed
+			instance.ReadValue();
+
+			// Read type, unless suppressed
+			if (element.ReadType())
+			{
+				if (instance.m_ContinuousReading)
+					instance.SayPause(instance.m_TypeDelay * 0.5f);
+				else
+					instance.SayPause(instance.m_TypeDelay);
+				instance.ReadType();
+			}
 		}
 
 		// Read hint, but not in quick mode (repeats and continuous reading)

@@ -61,6 +61,9 @@ public class AccessibleButton : UAP_BaseElement
 			if (!m_ReferenceElement.gameObject.activeInHierarchy)
 				return false;
 
+		if (m_SkipIfDisabled && !IsInteractable())
+			return false;
+
 		if (!UAP_AccessibilityManager.GetSpeakDisabledInteractables())
 			if (!IsInteractable())
 				return false;

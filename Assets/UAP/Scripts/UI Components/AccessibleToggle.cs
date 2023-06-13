@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -32,6 +30,9 @@ public class AccessibleToggle : UAP_BaseElement
 		if (m_ReferenceElement != null)
 			if (!m_ReferenceElement.gameObject.activeInHierarchy)
 				return false;
+
+		if (m_SkipIfDisabled && !IsInteractable())
+			return false;
 
 		if (!UAP_AccessibilityManager.GetSpeakDisabledInteractables())
 			if (!IsInteractable())

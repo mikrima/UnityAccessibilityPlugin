@@ -1,10 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using System;
 using UnityEngine.Serialization;
 
 /// <summary>This is the base for all accessibility UI components. Use this to set values directly.</summary>
@@ -94,6 +92,8 @@ public abstract class UAP_BaseElement : MonoBehaviour
 	public AudioClip m_HintAsAudio = null;
 	public string m_Hint = "";
 	public bool m_HintIsLocalizationKey = false;
+
+	public bool m_SkipIfDisabled = false;
 
 	[HideInInspector]
 	public bool m_IsInsideScrollView = false;
